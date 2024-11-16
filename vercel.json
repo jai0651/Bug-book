@@ -4,5 +4,10 @@
       "path": "/api/clear-uploads",
       "schedule": "0 2 * * *"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "DATABASE_URL": "postgres://default:yqxJaKzc3uQ6@ep-raspy-dream-a4b93cjn-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+    }
+  }
 }
