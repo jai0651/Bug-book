@@ -46,6 +46,7 @@ export default function PostEditor() {
         placeholder: "What's crack-a-lackin'?",
       }),
     ],
+    immediatelyRender: false, // Important for SSR
   });
 
   const input =
