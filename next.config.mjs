@@ -16,17 +16,7 @@ const nextConfig = {
       source: "/hashtag/:tag",
       destination: "/search?q=%23:tag",
     },
-  ],
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      // Externalize native modules
-      config.externals.push('@node-rs/argon2');
-    }
-    return config;
-  },
-  experimental: {
-    serverComponentsExternalPackages: ["@node-rs/argon2"],
-  },
+  ]
 };
 
 export default nextConfig;
